@@ -15,6 +15,7 @@ module.exports = {
             "User already exist with this name, Please try another unique user name!"
         });
       }
+      
       const newUser = await User.create({
         username,
         email,
