@@ -10,7 +10,7 @@ Update USer
 (Also validating user input while adding the data)
 
 # How to get started
-git clone https://github.com/cosmicjs/user-management
+git clone [https://github.com/cosmicjs/user-management](https://github.com/Ayushsharmarit/User-management)
 cd User-management
 npm install
 
