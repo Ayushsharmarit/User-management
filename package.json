@@ -1,0 +1,31 @@
+{
+  "name": "user-management",
+  "version": "1.0.0",
+  "description": "user-records-keeping-app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ayushsharmarit/User-management.git"
+  },
+  "author": "Ayush Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ayushsharmarit/User-management/issues"
+  },
+  "homepage": "https://github.com/Ayushsharmarit/User-management#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "mongoose": "^7.4.4",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
