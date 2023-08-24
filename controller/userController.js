@@ -12,8 +12,7 @@ module.exports = {
       if (userExist) {
         return res.status(201).json({
           message:
-            "User already exist with this name, Please try another unique user name!",
-          data: newUser,
+            "User already exist with this name, Please try another unique user name!"
         });
       }
       const newUser = await User.create({
@@ -23,7 +22,9 @@ module.exports = {
       });
       return res.status(201).json({
         message: "User created successfully",
-        data: newUser,
+        data: {
+          username:newUser.username, email:newUser.email
+        },
       });
     } catch (error) {
       return res.status(400).json({
@@ -71,9 +72,7 @@ module.exports = {
         if (userExist) {
           return res.status(201).json({
             message:
-              "User already exist with this name, Please try another unique user name!",
-            data: newUser,
-          });
+              "User already exist with this name, Please try another unique user name!"});
         }
       }
       if (email) {
@@ -98,7 +97,10 @@ module.exports = {
 
       return res.status(200).json({
         message: "User updated successfully",
-        data: updatedUser,
+        data: {
+          username:updatedUser.username,
+          email:updatedUser.email
+        },
       });
     } catch (error) {
       return res.status(400).json({
